@@ -20,6 +20,10 @@
             android:name=".AddReminderActivity"
             android:label="@string/title_activity_add_reminder" >
         </activity>
+        <activity
+            android:name=".ShowReminderActivity"
+            android:label="@string/title_activity_show_reminder" >
+        </activity>
     </application>
 
 </manifest>
