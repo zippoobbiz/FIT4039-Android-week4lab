@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">week4lab</string>
+    <string name="app_name">Reminder list</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="action_add">Add</string>
-    <string name="title_activity_add_reminder">AddReminderActivity</string>
+    <string name="action_save">Save</string>
+    <string name="title_activity_add_reminder">Add reminder</string>
     <string name="add_reminder_title">Title:</string>
     <string name="add_reminder_description">Description:</string>
     <string name="add_reminder_due_date">Due date:</string>
     <string name="add_reminder_completed">Completed:</string>
     <string name="add_reminder_submit">Submit</string>
     <string name="add_reminder_reset">Reset</string>
-    <string name="title_activity_show_reminder">ShowReminderActivity</string>
+    <string name="title_activity_show_reminder">Reminder details</string>
 </resources>
