@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -80,6 +82,14 @@ public class ReminderListActivity extends Activity {
             if(resultCode == RESULT_OK){
                 Reminder r = (Reminder)data.getSerializableExtra("reminder");
                 ReminderList.add(r);
+
+                Collections.sort(ReminderList, new Comparator<Reminder>() {
+                    @Override
+                    public int compare(Reminder reminder1, Reminder reminder2) {
+
+                        return reminder1.getDueDate().compareTo(reminder2.getDueDate());
+                    }
+                });
                 adapter.notifyDataSetChanged();
                 Log.i("ReminderListActivity", "onActivityResult ADD_REMINDER_CODE RESULT_OK ReminderList.size = " + ReminderList.size());
             }
