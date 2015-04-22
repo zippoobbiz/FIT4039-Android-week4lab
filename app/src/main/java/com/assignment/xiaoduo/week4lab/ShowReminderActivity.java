@@ -47,7 +47,7 @@ public class ShowReminderActivity extends Activity {
         title_et.setText(reminder.getTitle());
         description_et.setText(reminder.getDescription());
         Date date = reminder.getDueDate();
-        dueDate_dp.init(date.getYear(),date.getMonth(), date.getDay(), null);
+        dueDate_dp.init(date.getYear(),date.getMonth(), date.getDate(), null);
         completed_cb.setChecked(reminder.isCompleted());
 
         title_et.setEnabled(false);
